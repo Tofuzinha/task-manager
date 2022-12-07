@@ -1,0 +1,25 @@
+FrameWorks de admin: https://adminjs.co/
+
+
+Pacotes para iniciar banco de dados:
+1: yarn add adminjs @adminjs/express express express-formidable tslib
+2: yarn add nodemon prettier sucrase --dev
+3: yarn add express-session
+4: yarn add @adminjs/sequelize dotenv postgres pg-hstore sequelize
+
+Iniciar Docker no projeto:
+docker-compose up
+
+criar models pelo sequilize-cli
+npx sequelize-cli model:generate --name User --attributes name:string,email:string,password_hash:string
+
+Comandos sequilize-cli:
+> Migrar ações feitas: npx sequelize-cli db:migrate
+> Desfaz alguma migration cagada: npx sequelize-cli db:migrate:undo
+
+
+instalar docker e usar o postgres
+
+https://guia.devsamurai.com.br/docs/ambiente-de-desenvolvimento/docker/
+
+
